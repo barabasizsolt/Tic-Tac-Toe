@@ -10,6 +10,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->current->setText(this->symbol + " turn!");
     ui->current->setAlignment(Qt::AlignCenter);
     setGrid();
+
+    ui->centralwidget->setStyleSheet("background-color:#440a67;");
+    ui->current->setStyleSheet("color:#ffe3fe;");
+    for (int i = 0; i < buttonsList.count(); i++){
+       buttonsList.at(i)->setStyleSheet("background-color:#b4aee8;color:#ffe3fe;border-radius:15px;");
+    }
 }
 
 MainWindow::~MainWindow(){
@@ -35,11 +41,11 @@ void MainWindow::clicked(QPushButton* btn, int x, int y){
     btn->setText(this->symbol);
     this->symbol == "X" ? this->grid[x][y] = 0 : this->grid[x][y] = 1;
     if(gameOver()){
-        QMessageBox::information(this, "Result", "You won the game!");
+        QMessageBox::about(this, "Result", "You won the game!");
         for (int i = 0; i < buttonsList.count() - 1; i++){
              buttonsList.at(i)->setEnabled(false);
         }
-        ui->current->setText(this->symbol + " is the winner!");
+        ui->current->setText(this->symbol + " won!");
     }
     else {
         changeSimbol();
@@ -49,7 +55,7 @@ void MainWindow::clicked(QPushButton* btn, int x, int y){
                return;
            }
         }
-        QMessageBox::information(this, "Result", "Draw!");
+        QMessageBox::about(this, "Result", "Draw!");
         ui->current->setText("Draw!");
     }
 }

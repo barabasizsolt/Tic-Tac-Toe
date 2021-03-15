@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>520</width>
-    <height>655</height>
+    <width>515</width>
+    <height>624</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,6 +25,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -43,6 +44,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -61,6 +63,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -79,6 +82,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -97,6 +101,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -115,6 +120,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -133,6 +139,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -151,6 +158,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -169,6 +177,7 @@
     </property>
     <property name="font">
      <font>
+      <family>MV Boli</family>
       <pointsize>50</pointsize>
      </font>
     </property>
@@ -179,15 +188,18 @@
    <widget class="QPushButton" name="buttonReset">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>160</x>
       <y>10</y>
-      <width>131</width>
-      <height>31</height>
+      <width>191</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <family>MV Boli</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="text">
@@ -197,15 +209,16 @@
    <widget class="QLabel" name="current">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>60</y>
-      <width>191</width>
-      <height>41</height>
+      <x>80</x>
+      <y>70</y>
+      <width>351</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
+      <family>MV Boli</family>
+      <pointsize>21</pointsize>
      </font>
     </property>
     <property name="text">
@@ -218,12 +231,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>520</width>
+     <width>515</width>
      <height>20</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
