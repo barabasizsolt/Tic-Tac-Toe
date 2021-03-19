@@ -18,14 +18,6 @@ public:
 
     ~MainWindow();
 
-    void setGrid();
-
-    void clicked(QPushButton* btn, int x, int y);
-
-    void changeSimbol();
-
-    bool gameOver();
-
 private slots:
     void on_button1_clicked();
 
@@ -55,5 +47,13 @@ private:
     QString symbol = "X";
 
     QList<QPushButton *> buttonsList;
+
+    void setGrid();
+
+    void clicked(QPushButton* btn, int x, int y);
+
+    void changeSimbol();
+
+    bool gameOver();
 };
 #endif // MAINWINDOW_H
